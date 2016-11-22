@@ -50,3 +50,23 @@ https://www.youtube.com/watch?v=vVuIts9EPz0
  
  - funções utilizadas:
 		- get_sidebar();
+		
+Vídeo 5
+https://www.youtube.com/watch?v=l9ldhZcBTDc&t=228s
+
+ - Inserindo o arquivo footer (no qual fechamos as tags </body> e </html>)
+ 
+  - funções utilizadas:
+		- wp_footer();
+		- get_footer();
+		- add_theme_support('post-thumbnails'); - adicionado ao functions.php
+		- the_post_thumbnail(array(198,198));
+
+ ** A estilização  do footer via css no final do vídeo foi ignorada por ser insignificante para o objetivo do curso.
+		
+***A FAZER: Identificar o que está ocorrendo e gerando os problemas:
+ - O degradê do menu superior não está aparecendo
+ - O menu superior não está se alinhando com a propriedade css -500px;
+ *Creio que é algo no css ou uma tag não fechada que está provocando isto tudo
+ 
+ 
