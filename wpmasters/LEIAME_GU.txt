@@ -79,3 +79,17 @@ Estilizando o widget "Pesquisa" criando um arquivo searchform.php
  - funções utilizadas:
 		- the_content(); // exibe todo o conteúdo do post
 		- comments_template(); //exibe o template completo para uma pessoa deixar um comentário, com o form
+		
+
+Vídeo 7
+https://www.youtube.com/watch?v=sJbucqkrQRM
+
+ - Criando o arquivo page.php para definir o padrão das páginas estáticas (criadas pelo usuário wp)
+	* É apenas uma cópia do index.php
+ - Criando o arquivo category.php
+	* É apenas uma cópia do index.php com a parte do conteúdo (posts) alterado
+	
+	
+  - Funções utilizadas:
+		- single_cat_title('');
+		- query_posts($query_string . "&order=ASC");
