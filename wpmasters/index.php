@@ -1,6 +1,7 @@
 	<?php get_header(); ?>
 	
 	<div class="container">
+	<div class="left_container">
 	<?php
 		if(have_posts()) : while(have_posts()) : the_post();
 	?>
@@ -19,4 +20,6 @@
 	<?php
 		endif;
 	?>
+	</div>
+	<div class="right_container"><?php get_sidebar(); ?></div>
 	</div>

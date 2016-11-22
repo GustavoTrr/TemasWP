@@ -40,3 +40,13 @@ https://www.youtube.com/watch?v=b08KgB-vDCo
 		- the_category();
 		- comments_number("Nenhum Comentário","1 Comentário","% Comentários");
 		- the_author();
+		
+Vídeo 4
+https://www.youtube.com/watch?v=vVuIts9EPz0
+
+ - Inserindo Sidebar
+ - Arquivo sidebar
+ - Arquivo functions
+ 
+ - funções utilizadas:
+		- get_sidebar();

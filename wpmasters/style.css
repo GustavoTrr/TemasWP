@@ -93,3 +93,28 @@ li a:hover{
 	color:#000000;
 	text-decoration:underline;
 	}
+.left_container{
+	position:relative;
+	width:750px;
+	float:left;
+	}
+.right_container{
+	position:relative;
+	width:250px;
+	float:right;
+	}
+.sidebar .widgets{
+	width:214px;
+	background-color:#EFEFEF;
+	border:1px solid #CCCCCC;
+	padding:18px;
+	font-family:Helvetica;
+	font-size:14px;
+	color:#333333;
+	margin-top:40px;
+	text-align: justify;
+	}
+.sidebar .widgets h3{
+	font-family:Helvetica;
+	color:#333333;
+	}
