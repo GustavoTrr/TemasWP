@@ -45,7 +45,7 @@ Version: 1.0
 	position:ralative;
 	width:1000px;
 	height:45px;
-	/*margin-left:-500px; ****Tá dando erro!***/
+	/*margin-left:-500px; ****Tรก dando erro!***/
 	left:50%;
 	line-height:45px;
 	}
@@ -68,13 +68,35 @@ li a:hover{
 .content{
 	position:relative;
 	width:700px;
-	height:200px;
+	height:150px;
 	background-color: #EFEFEF;
 	border:1px solid #CCCCCC;
 	padding:10px;
 	font-family: Tahoma, Helvetica,sans-serif;
-	font-size:13px;
+	font-size:14px;
 	color:#333333;
+	text-align:justify;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	}
+.single_container{
+	position:relative;
+	width:690px;
+	background-color: #EFEFEF;
+	border:1px solid #CCCCCC;
+	padding:15px;
+	font-family: Tahoma, Helvetica,sans-serif;
+	font-size:14px;
+	color:#333333;
+	text-align:justify;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	}
+.single_container p{
+	line-height:20px;
+	margin-bottom:12px;
 	}
 .thumbnail{
 	position:relative;
@@ -169,4 +191,12 @@ li a:hover{
 	display:inline;
 	padding-left:10px;
 	padding-right:10px;
+	}
+#s{
+	width:150px;
+	height:30px;
+	border:1px solid #CCCCCC;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
 	}

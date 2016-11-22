@@ -69,4 +69,13 @@ https://www.youtube.com/watch?v=l9ldhZcBTDc&t=228s
  - O menu superior não está se alinhando com a propriedade css -500px;
  *Creio que é algo no css ou uma tag não fechada que está provocando isto tudo
  
- 
+Vídeo 6
+https://www.youtube.com/watch?v=_OXvBga4jpI
+
+Criando a página específica para mostrar cada post (single.php)
+Estilizando o widget "Pesquisa" criando um arquivo searchform.php
+
+
+ - funções utilizadas:
+		- the_content(); // exibe todo o conteúdo do post
+		- comments_template(); //exibe o template completo para uma pessoa deixar um comentário, com o form

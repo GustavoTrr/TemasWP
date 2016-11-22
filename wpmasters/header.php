@@ -13,7 +13,7 @@
 	<body>
 		
 		<div class="header">
-			<div class="centered_header"><div class="logo"><a href="<?php echo get_option('home'); ?>"><img src="wp-content\themes\tema_wp_buscaescolas/img/logo.png" width="350px"/></a></div></div>
+			<div class="centered_header"><div class="logo"><a href="<?php echo get_option('home'); ?>"><img src="wp-content/themes/wpmasters/img/logo.png" width="350px"/></a></div></div>			
 		</div>
 		
 		<div class="menu">
