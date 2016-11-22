@@ -7,3 +7,16 @@ https://www.youtube.com/watch?v=44XAFLCBo9g
 
  - screenshot.png = 300 x 225 (thumbnail para aparecer na lista de temas do wp)
  - A estrutura mais básica de um tema aceita pelo WP é o arquivo style.css com a descrição do tema e o index.php
+ 
+ 
+ Vídeo 2
+ https://www.youtube.com/watch?v=IAMDl4JAaQo
+ 
+ - A função php wp_head(); é inserida dentro do <head> , logo antes de encerrar o </head> para que o wp identifique que ali se trata do head html
+ - Mesma coisa é feita acrescentando a função wp_foot(); no footer
+ - Funções utilizadas:
+		- bloginfo('name');
+		- bloginfo('description');
+		- wp_head();
+		- echo get_option('home');
+		- wp_list_pages('title_li='); 
