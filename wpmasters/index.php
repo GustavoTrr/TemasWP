@@ -1,11 +1,15 @@
 	<?php get_header(); ?>
-	<div class="container">
 	
+	<div class="container">
 	<?php
 		if(have_posts()) : while(have_posts()) : the_post();
 	?>
-	<h1><?php the_title(); ?></h1>
-	<?php the_content(); ?>
+	<a href="<?php the_permalink(); ?>" id="title"><h1><?php the_title(); ?></h1></a>
+	<div class="content"><div class="thumbnail"></div><?php the_excerpt(); ?><br/><br/><br/><br/>
+		Publicado por <?php the_author(); ?> em <?php the_date("d/m/Y"); ?>  às <?php the_time("g:i a"); ?> - Na categoria <?php the_category(); ?> - <?php comments_number("Nenhum Comentário","1 Comentário","% Comentários"); ?></div>
+		
+		<br/>
+	
 
 	<?php
 		endwhile;
@@ -15,3 +19,4 @@
 	<?php
 		endif;
 	?>
+	</div>

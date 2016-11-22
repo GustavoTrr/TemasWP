@@ -17,6 +17,26 @@ https://www.youtube.com/watch?v=44XAFLCBo9g
  - Funções utilizadas:
 		- bloginfo('name');
 		- bloginfo('description');
+		- bloginfo('version');
+		- bloginfo('charset');
+		- bloginfo('stylesheet_url');
+		- bloginfo('rss2_url');
+		- bloginfo('rss_url');
+		- bloginfo('atom_url');
 		- wp_head();
 		- echo get_option('home');
 		- wp_list_pages('title_li='); 
+		
+Vídeo 3
+https://www.youtube.com/watch?v=b08KgB-vDCo
+
+ - A parte da inserção de link pra face e tweeter eu ignorei. é apenas uma estilização
+ - funções utilizadas:
+		- wp_list_categories('title_li=');
+		- the_excerpt();
+		- the_permalink();
+		- the_date("d/m/Y"); 
+		- the_time("g:i a");
+		- the_category();
+		- comments_number("Nenhum Comentário","1 Comentário","% Comentários");
+		- the_author();

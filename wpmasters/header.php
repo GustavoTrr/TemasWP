@@ -13,14 +13,14 @@
 	<body>
 		
 		<div class="header">
-			<div class="centered_header"><a href="<?php echo get_option('home'); ?>"><img src="wp-content\themes\tema_wp_buscaescolas/img/logo.png" width="350px"/></a></div>
+			<div class="centered_header"><div class="logo"><a href="<?php echo get_option('home'); ?>"><img src="wp-content\themes\tema_wp_buscaescolas/img/logo.png" width="350px"/></a></div></div>
 		</div>
 		
 		<div class="menu">
 			<div class="centered_menu">
 				<ul>
 					<li><a href="<?php echo get_option('home'); ?>">Home</a></li>
-					<?php wp_list_pages('title_li='); ?>
+					<?php wp_list_categories('title_li='); ?>
 				</ul>
 			</div>
 		</div>

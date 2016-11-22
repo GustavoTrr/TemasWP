@@ -45,7 +45,7 @@ Version: 1.0
 	position:ralative;
 	width:1000px;
 	height:45px;
-	/*margin-left:-500px; ****Tá dando erro!***/
+	/*margin-left:-500px; ****TÃ¡ dando erro!***/
 	left:50%;
 	line-height:45px;
 	}
@@ -62,6 +62,34 @@ li a{
 	text-decoration:none;
 	}	
 li a:hover{
+	color:#000000;
+	text-decoration:underline;
+	}
+.content{
+	position:relative;
+	width:700px;
+	height:200px;
+	background-color: #EFEFEF;
+	border:1px solid #CCCCCC;
+	padding:10px;
+	font-family: Tahoma, Helvetica,sans-serif;
+	font-size:13px;
+	color:#333333;
+	}
+.thumbnail{
+	position:relative;
+	width:198px;
+	height:198px;
+	float:left;
+	border:1px solid #CCCCCC;
+	margin-right:10px;
+	}
+#title{
+	font-family: Tahoma, Helvetica,sans-serif;
+	color:#333333;
+	text-decoration:none;
+	}
+#title:hover{
 	color:#000000;
 	text-decoration:underline;
 	}
