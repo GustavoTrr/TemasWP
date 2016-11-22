@@ -1,6 +1,7 @@
 <div id="sidebar">
-	<h2><?php _e('Categories'); ?></h2>
-	<ul>
-		<?php wp_list_cats('short_column=name'); ?>
-	</ul>
+	<?php if(is_active_sidebar('lateral_1')) : ?>
+	<div id="primary-sidebar">
+		<?php dynamic_sidebar('lateral_1'); ?>
+	</div>
+	<?php endif; ?>
 </div>
