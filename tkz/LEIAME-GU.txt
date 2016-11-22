@@ -6,10 +6,25 @@ TekZoom
 
 Vídeo 1
 https://www.youtube.com/watch?v=ZeHS8bQVtIA
-
+ - Estrutura Básica
+ - Funções utilizadas:
+	- get_header();
+	- the_title();
+	- the_content();
+	- get_sidebar();
+	- get_footer();
+	- _e('Categories');
+	- wp_list_cats('short_column=name');
+	- bloginfo('stylesheet_url');
+ 
 Vídeo 2
 https://www.youtube.com/watch?v=C2Tjqer2vms
-
+ - Criação do link no título do post e criação da paginação de posts
+ - Funções utilizadas:
+	- the_permalink();
+	- next_posts_link('Posts Antigos');
+	- previous_posts_link('Novos posts');
+ 
 Vídeo 3
 https://www.youtube.com/watch?v=3NlVjrPEzyc
 
