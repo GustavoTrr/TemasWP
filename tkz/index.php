@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-<div id="main">
-	<div id="conteudo">
+<div class="row">
+	<div class="col-md-8">
 		<h1>Conteúdo Geral</h1>
 		<?php if(have_posts()) : while (have_posts()) : the_post(); ?>
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>

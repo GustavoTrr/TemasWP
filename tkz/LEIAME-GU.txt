@@ -1,13 +1,13 @@
 
-TEMA CRIADO COM BASE NA VÕDEO AULA
+TEMA CRIADO COM BASE NA V√çDEO AULA
 
-Passo a passo para CriaÁ„o de Temas WordPress
+Passo a passo para Cria√ß√£o de Temas WordPress
 TekZoom 
 
-VÌdeo 1
+V√≠deo 1
 https://www.youtube.com/watch?v=ZeHS8bQVtIA
- - Estrutura B·sica
- - FunÁıes utilizadas:
+ - Estrutura B√°sica
+ - Fun√ß√µes utilizadas:
 	- get_header();
 	- the_title();
 	- the_content();
@@ -17,18 +17,18 @@ https://www.youtube.com/watch?v=ZeHS8bQVtIA
 	- wp_list_cats('short_column=name');
 	- bloginfo('stylesheet_url');
  
-VÌdeo 2
+V√≠deo 2
 https://www.youtube.com/watch?v=C2Tjqer2vms
- - CriaÁ„o do link no tÌtulo do post e criaÁ„o da paginaÁ„o de posts
- - FunÁıes utilizadas:
+ - Cria√ß√£o do link no t√≠tulo do post e cria√ß√£o da pagina√ß√£o de posts
+ - Fun√ß√µes utilizadas:
 	- the_permalink();
 	- next_posts_link('Posts Antigos');
 	- previous_posts_link('Novos posts');
  
-VÌdeo 3
+V√≠deo 3
 https://www.youtube.com/watch?v=3NlVjrPEzyc
  - Habilitando widgets para funcionarem no sidebar
- - FunÁıes utilizadas:
+ - Fun√ß√µes utilizadas:
 	- is_active_sidebar('lateral_1');
 	- dynamic_sidebar('lateral_1');
 	- function arphabet_widgets_init(){
@@ -44,5 +44,16 @@ https://www.youtube.com/watch?v=3NlVjrPEzyc
 		
 		add_action('widgets_init','arphabet_widgets_init');
 
-VÌdeo 4
+V√≠deo 4
 https://www.youtube.com/watch?v=aBHCMTO_5Kw
+
+ - Adaptando tema para BOOTSTRAP e sua consequente responsividade
+ - Utilizamos a vers√£o CDN do Bootstrap
+ - Utilizamos meta name=viewport
+ - Trocamos <div id="footer"> pela tag HTML5 <footer>
+ - Utilizamos as classes css:
+	- "container-fluid"
+	- "page-header"
+	- "row"
+	- "col-md-8"
+	- "col-md-4"

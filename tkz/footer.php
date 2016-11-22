@@ -1,6 +1,6 @@
-<div id="footer">
+<footer>
 	<h1>Rodapé</h1>
-</div>
+</footer>
 </div><!--FIM div id=geral-->
 </body>
 </html>
