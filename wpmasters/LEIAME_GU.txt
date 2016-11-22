@@ -1,0 +1,9 @@
+
+Este tema foi criado como ESTUDO
+com base na série de vídeo-aulas do youtube do WP Masters
+
+Vídeo 1
+https://www.youtube.com/watch?v=44XAFLCBo9g
+
+ - screenshot.png = 300 x 225 (thumbnail para aparecer na lista de temas do wp)
+ - A estrutura mais básica de um tema aceita pelo WP é o arquivo style.css com a descrição do tema e o index.php
