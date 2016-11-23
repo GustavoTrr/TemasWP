@@ -150,3 +150,48 @@ https://www.wptotal.com/como-criar-um-template-wordpress-comments/
 	para comparar as duas formatações.
  
  
+Aula 6
+https://www.wptotal.com/como-criar-um-wordpress-theme-sidebar-functions-footer/
+
+ - Aqui criamos a sidebar, o functions.php e o footer e habilitaremos os widgets.
+ 
+ - A sidebar pode ser usada para colocar publicidade, um formulário de pesquisa, as categorias, links de sites parceiros, etc.
+ 
+ -  widgets?
+
+	Os widgets permitem que você adicione conteúdo numa parte do tema sem ter que editar o código. Normalmente os widgets são usados nas sidebars, mas você pode adicionar widgets em qualquer lugar.
+	Depois do tema estar preparado para trabalhar com widgets, vá a Apresentação (Aparência) > Widgets e só tem que arrastar os widgets para os espaços que o seu tema suporta.
+	
+	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar') ) : ?><?php endif; ?>
+	Este código faz uma verificação para saber se o tema suporta widgets. Se suportar, então ele vai mostrar os widgets da zona/área com o nome "Sidebar".
+	O próximo passo é "registar" esta zona para que o wordpress consiga guardar e mostrar os widgets no template. Isso é feito no ficheiro functions.php.
+	
+	 - O functions.php pode ser usado para definir muita informação, adicionar suporte para várias funcionalidades e até alterar a forma como o wordpress trabalha.
+	 
+	 <?php
+		/* WIDGETS */
+		 
+		if (function_exists('register_sidebar'))
+		{
+			register_sidebar(array(
+				'name'          => 'Sidebar',
+				'before_widget' => '<div class="widget">',
+				'after_widget'  => '</div>',
+				'before_title'  => '<h3>',
+				'after_title'   => '</h3>',
+			));
+		}
+		 
+		?>
+		linha 4: se a função "register_sidebar" existir (se o wordpress suportar widgets), então faz o que estiver entre as { ... } (linhas 5 e 13);
+		linha 5: inicio do "registo" de uma zona para widgets;
+		linha 7: define o nome da zona de widgets;
+		linha 8: define o código que fica antes do inicio do widget;
+		linha 9: define o código que fica no fim do widget;
+		linha 10: define o código que aparece antes de um título (caso o widget tenha um título);
+		linha 11: define o código que fica depois do título;
+		linha 12: termina o registo da zona;
+		linha 13: termina o trabalho iniciado na linha 4;
+		
+ - Funções Utilizadas:
+	- wp_footer();
