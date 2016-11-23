@@ -109,3 +109,30 @@ Depois de termos o index.php pronto, vamos criar a página que é responsável p
 	- is_month();
 	- is_year();
 	- is_author();
+
+	
+Aula 4
+https://www.wptotal.com/como-criar-um-wordpress-theme-parte-4/
+
+ - Aqui criaremos e configuraremos os arquivos single.php, page.php e 404.php
+ 
+  - O ficheiro single.php é usado para gerar o conteúdo da página de cada post. Assim como o index.php e archive.php criados da terceira parte desta série de artigos, o single.php também tem um loop e o seu trabalho é mostrar o post, os comentários e uma mensagem de erro caso a página não seja encontrada (neste caso o wordpress usa normalmente o 404.php).
+	- Na single não precisamos de paginação
+	- Na single é interessante ter a parte de comentários
+	- Além da tag dos comentários e da alteração no loop, fizemos uma alteração que é importante em termos de SEO: no título usamos uma tag <h1> em vez da <h2>. Esta alteração é importante porque devemos dizer aos motores de busca que aquele é o principal assunto/título da página.
+ 
+ - page.php
+
+	- Para o conteúdo que não deve de fazer parte do blog (página de contacto, sobre nós, etc), há as páginas estáticas. Estas páginas são mostradas com base no ficheiro page.php e as diferenças entre este ficheiro e o single.php são poucas, normalmente removemos o seguinte:
+	- informações sobre a página (data em que foi publicada, autor, categoria, etc);
+	- comentários;
+	- widgets de partilha e outras coisas que não sejam necessárias nestas páginas.
+ 
+  - A página 404.php é utilizada para que se possa estilizar a página de "Página não encontrada" do erro HTTP 404.
+	- Primeiro comece por informar o usuário que o que ele procura não foi encontrado e que lamenta por isso. Depois coloque ferramentas para que ele possa navegar por outras páginas do blog, alguns exemplos:
+		* formulário de pesquisa (busca) para que ele tente encontrar o que procura
+		* uma listagem das categorias ou arquivo por data
+		* link para a sua página de contacto para que ele possa falar consigo
+ 
+ - Funções Utilizadas:
+	- comments_template();

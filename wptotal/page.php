@@ -1,19 +1,22 @@
 <?php get_header(); ?>
-	<div id="conteudo">
-		<div id="artigos">
-			<div class="artigo">
-				<h2>Titulo do artigo 1</h2>
-				<p>Postado por administrador em 16/01/2012</p>
-				<p>Conteudo do artigo</p>
-			</div>
-			 
-			<div class="artigo">
-				<h2>Titulo do artigo 2</h2>
-				<p>Postado por administrador em 16/01/2012</p>
-				<p>Conteudo do artigo</p>
-			</div>
-		</div>
-		 
-		<?php get_sidebar(); ?>
-	</div>
+    <div id="conteudo">
+        <div id="artigos">
+         
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                <div class="artigo">
+                    <h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+                    <p><?php the_content(); ?></p>
+                </div>
+            <?php endwhile; else: ?>
+                <div class="artigo">
+                    <h2>Nada Encontrado</h2>
+                    <p>Erro 404</p>
+                    <p>Lamentamos mas não foram encontrados artigos.</p>
+                </div>            
+            <?php endif; ?>
+             
+        </div>
+         
+        <?php get_sidebar(); ?>
+    </div>
 <?php get_footer(); ?>
