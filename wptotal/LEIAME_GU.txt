@@ -30,3 +30,40 @@ As partes/ficheiros básicos e essenciais de um tema são os seguintes:
 	- get_header();
 	- get_sidebar();
 	- get_footer();
+	
+Aula 2
+https://www.wptotal.com/como-criar-um-wordpress-theme-parte-2/
+
+ - Acrescentamos no <head> o seguinte código:
+
+			<link rel="profile" href="http://gmpg.org/xfn/11" />
+			<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+			<title><?php wp_title(''); ?></title>
+			<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+			<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+			<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); wp_head(); ?>
+
+			linha 1: indica ao browser como o  mark-up deve de ser usado;
+			linha 2: indica o tipo de conteúdo e o conjunto de caracteres que está a ser usado;
+			linha 3: a tag wp_title vai gerar um título diferente para cada página. Esta tag pode ser mais trabalhada, mas falamos nisso noutro artigo;
+			linha 4: insere automaticamente o stylesheet criado anteriormente (style.css). O wordpress deteta a sua localização e insere o url do ficheiro;
+			linha 5: gera o url de pingback, não é obrigatório mas convém usar;
+			linha 6: ativa o suporte a comentários com vários níveis e também tem a tag wp_head que serve para inserir outras linhas de código nesta zona do tema (é uma tag muito usada pelos plugins)
+			
+ - Mais em baixo temos o menu e mais uma vez é uma escolha sua. Pode criar o menu manualmente usado html, usar alguma tag do wordpress para listar as categorias (o mais usado) ou usar os menus personalizados do wordpress que permitem adicionar ou remover links do menu através do painel de administração.
+	- Nós optamos por mostrar as categorias, por isso vamos usar o seguinte código:
+	- <?php wp_list_cats('sort_column=name'); ?>
+	- Se você preferir mostrar as páginas em vez das categorias, use a seguinte tag:
+	- <?php wp_list_pages('title_li='); ?>
+	
+ - Funções utilzadas:
+	- bloginfo('html_type');
+	- bloginfo('charset');
+	- wp_title('');
+	- bloginfo( 'stylesheet_url' );
+	- bloginfo( 'pingback_url' );
+	- if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); 
+	- wp_head();
+	- bloginfo('name');
+	- bloginfo('description');
+	- wp_list_cats('sort_column=name');

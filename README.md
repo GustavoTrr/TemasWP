@@ -16,3 +16,6 @@ https://www.youtube.com/watch?v=44XAFLCBo9g&t=23s
 
 O segundo tema criado é o tkz, que foi desenvolvido com base na série de vídeo aulas do canal do youtube - TekZoom
 https://www.youtube.com/watch?v=ZeHS8bQVtIA
+
+O terceiro tema criado é o wptotal, que foi desenvolvido com base na série de posts do site wptotal
+https://www.wptotal.com/como-criar-um-wordpress-theme/
