@@ -1,0 +1,26 @@
+
+Este tema foi criado como ESTUDO
+com base na série de posts https://www.wptotal.com/como-criar-um-wordpress-theme/
+
+Aula 1
+https://www.wptotal.com/como-criar-um-template-wordpress-parte-1/
+
+1ª Dica: O WordPress é um gestor de conteúdo que no inicio pode fazer alguma confusão as muitas pastas e ficheiros que tem, mas você só tem que se preocupar com 2 coisas: o ficheiro wp-config.php e a pasta wp-content.
+
+O ficheiro wp-config.php contém toda a informação necessária para o WordPress se ligar a base de dados (banco de dados) e funcionar normalmente. Já a pasta wp-content é onde ficam os temas e os plugins.
+
+As partes/ficheiros básicos e essenciais de um tema são os seguintes:
+
+* header.php: local onde fica o código do cabeçalho <head>, e início do corpo <body>
+* sidebar.php: local onde fica o código da lateral
+* footer.php: local onde fica o código do rodapé
+* index.php: código que mostra os artigos na página inicial
+* single.php: código que mostra o artigo na sua própria página
+* page.php: código que mostra o conteúdo de uma página estática
+* archive.php: igual ao index.php, o código nesta parte vai mostrar os artigos que estão no arquivo, nas categorias, tags, etc
+* functions.php: local onde ficam algumas funções que adicionam mais capacidades aos temas
+* 404.php: igual ao index.php, em vez de mostrar um artigo deverá de mostrar um texto a avisar que o conteúdo não foi encontrado
+* style.css: ficheiro onde fica o stylesheet do tema
+
+2ª - Criamos uma página única com o modelo HTML que usaremos.
+3ª - separaremos as partes deste conteúdo HTML referencial em arquivos separados.
