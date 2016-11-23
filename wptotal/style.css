@@ -106,3 +106,15 @@ margin:10px;
 font-size:11px;
 text-align:center;
 }
+.navegacao{
+    width:630px;
+    float:left;
+    }
+ 
+.recentes{
+    float:left;
+    }
+ 
+.anteriores{
+    float:right;
+    }

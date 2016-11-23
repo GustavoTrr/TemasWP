@@ -67,3 +67,45 @@ https://www.wptotal.com/como-criar-um-wordpress-theme-parte-2/
 	- bloginfo('name');
 	- bloginfo('description');
 	- wp_list_cats('sort_column=name');
+	
+Aula 3
+https://www.wptotal.com/como-criar-um-wordpress-theme-parte-3/
+
+ - O index.php é o ficheiro onde fica todo o conteúdo mostrado na homepage. Este ficheiro é usado também quando algum ficheiro responsável pela parte do conteúdo está em falta (single.php, archive.php, etc).
+ - Criamos o famoso "loop" do wp:
+		 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		 
+		<?php endwhile?>
+		 
+		<?php else: ?>
+			 
+		<?php endif; ?>
+		
+		* Para quem não sabe, o "loop" é responsável pela mostragem do conteúdo na página inicial e páginas de arquivo do blog e também mostrar mensagens ao usuário no caso de não existir artigos para ser mostrados ou mostrar os links de navegação pelo arquivo.
+	
+ - Para a navegação entre posts, o autor sugere utilizar:
+	- <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
+		*ou
+	- <div class="navegacao">
+			<div class="recentes"><?php next_posts_link('&laquo; Artigos Anteriores') ?></div>
+			<div class="anteriores"><?php previous_posts_link('Artigos Recentes &raquo;') ?></div>
+		</div>
+		
+	Archive.php:
+
+Depois de termos o index.php pronto, vamos criar a página que é responsável por mostrar os arquivos do blog. Existem várias páginas que podem fazer isto, até o index.php faz esse trabalho caso não exista nenhum ficheiro de arquivo, mas vamos usar um ficheiro que é o default para todas as páginas de arquivo (categorias, tags, links, data, autores, etc): o archive.php
+
+ - Funções Utilizadas:
+	- the_permalink();
+	- the_title();
+	- the_author();
+	- the_time('d/M/Y');
+	- comments_popup_link('Sem Comentários', '1 Comentário', '% Comentários', 'comments-link', '');
+	- edit_post_link('(Editar)');
+	- is_category();
+	- single_cat_title();
+	- is_day();
+	- the_time('j de F de Y');
+	- is_month();
+	- is_year();
+	- is_author();
