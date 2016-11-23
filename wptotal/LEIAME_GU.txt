@@ -136,3 +136,17 @@ https://www.wptotal.com/como-criar-um-wordpress-theme-parte-4/
  
  - Funções Utilizadas:
 	- comments_template();
+	
+Aula 5
+https://www.wptotal.com/como-criar-um-template-wordpress-comments/
+
+ - Aqui criamos o arquivo comments.php responsável por mostrar todos os comentários dos artigos e páginas e também por deixar os usuários comentarem.
+ 
+  - Este arquivo "comments.php" é chamado pela função <?php comments_template(); ?>
+	* que foi inserida na página single.php
+
+ - Caso o arquivo não exista, a função chamará um template de comentários padrão do WP!
+ - Foi inserido no tema duas imagens "comments_estilizado.png" e "comments_padrao_wp.png"
+	para comparar as duas formatações.
+ 
+ 

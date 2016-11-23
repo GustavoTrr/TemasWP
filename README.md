@@ -2,7 +2,7 @@
 Criação de temas para Wordpress desde aulas até outros temas personalizados
 
 Este repositório se encontra dentro da pasta wordpress/wp-content/themes
-Aqui ficam os tema do wp organizados em pastas. Cada um com seu nome.
+Aqui ficam os temas do WP organizados em pastas. Cada um com seu nome.
 
 Por default, o wp traz os temas 
 	* twentyfourteen
