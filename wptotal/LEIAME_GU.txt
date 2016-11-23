@@ -24,3 +24,9 @@ As partes/ficheiros básicos e essenciais de um tema são os seguintes:
 
 2ª - Criamos uma página única com o modelo HTML que usaremos.
 3ª - separaremos as partes deste conteúdo HTML referencial em arquivos separados.
+4ª - Aprendemos que sem o arquivo css, o WP não considera um tema pronto para uso.
+
+ - Funções utilizadas:
+	- get_header();
+	- get_sidebar();
+	- get_footer();
